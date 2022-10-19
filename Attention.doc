@@ -1,13 +1,13 @@
 #注意：由于我没有在Python程序中进行创建数据库和表的操作，因此在程序开始之前必须在MySQL中执行以下语句：
-	创建数据库
+	创建数据库
 Create database employee_system;
 Use employee_system;
-	创建管理员表
+	创建管理员表
 Create table admin(
 	User_name char(30) primary key,
 	Password char(30)
 	);
-	创建员工信息表
+	创建员工信息表
 Create table employee(
 	Id char(30) primary key,
 	Name char(40),
@@ -15,7 +15,7 @@ Create table employee(
 	Age int,
 	Dept char(40)
 	);
-	创建经理信息表
+	创建经理信息表
 Create table manager(
 	Id char(30) primary key,
 	Name char(40),
@@ -23,11 +23,11 @@ Create table manager(
 	Age int,
 	Dept char(40)
 	);
-	创建员工账号表
+	创建员工账号表
 Create table employee_login(
 	User_name char(30) primary key,
 	Password char(30) );
-	创建经理登录表
+	创建经理登录表
 Create table manager_login(
 	User_name char(30) primary key,
 	Password char(30) );
